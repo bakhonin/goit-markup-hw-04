@@ -195,6 +195,7 @@ body {
 .hero {
   display: flex;
   align-items: center;
+  width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 
@@ -203,7 +204,6 @@ body {
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   background-size: cover;
-  
 }
 .hero-title {
   width: 500px;
