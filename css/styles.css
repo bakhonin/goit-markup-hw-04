@@ -195,9 +195,11 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  width: 1440px;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
   background-color: var(--secondary-background-color);
@@ -255,16 +257,27 @@ body {
   gap: 24px;
 }
 
+.strategy-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+
+  width: 264px;
+  height: 112px;
+  background-color: #F4F4FD;
+}
+
 .section-strategy-icon {
   display: flex;
-  margin-bottom: 8px;
-  padding: 24px 100px;
-  background-color: #F4F4FD;
+  align-items: center;
+  width: 64px;
+  height: 64px;
 }
 
 
 .strategy-item {
-  flex-basis: calc((100% - 72px) / 4);
+ flex-basis: calc((100% - 72px) / 4);
 }
 
 .strategy-text {
@@ -386,6 +399,10 @@ body {
   background-color: var(--primery-background-color);
 }
 
+.customers-title {
+  margin-bottom: 72px;
+}
+
 .customers-list {
   display: flex;
   justify-content: center;
@@ -395,25 +412,25 @@ body {
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
-  height: 88px;
-
-  margin-top: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 168px;
+  height: 88px;
   fill: #8E8F99;
 }
 
 
 .customers-link-logo {
+  padding: 16px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
 
-  border: 3px solid #8E8F99;
+  border: 1px solid #8E8F99;
   border-radius: 4px;
 
   color: #8E8F99;
@@ -451,7 +468,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-right: 120px;
   }
 
@@ -495,7 +512,7 @@ body {
   flex-direction: column;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-list {
@@ -608,6 +625,7 @@ body {
   margin-bottom: 48px;
   flex-basis: calc((100% - 144px) / 9);
   background-color: var(--primery-background-color);
+  cursor: pointer;
 }
 
 .portfolio-item:nth-child(3n + 3) {
