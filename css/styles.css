@@ -623,7 +623,6 @@ body {
   margin-bottom: 48px;
   flex-basis: calc((100% - 144px) / 9);
   background-color: var(--primery-background-color);
-
 }
 
 .portfolio-item:nth-child(3n + 3) {
